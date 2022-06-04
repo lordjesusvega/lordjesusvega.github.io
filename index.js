@@ -1,6 +1,6 @@
 var btn = document.getElementById("counter");
 var progressBar = document.getElementById("progressBar");
-
+var goal = document.getElementById("goal");
 var x = 0
 var undo = 0;
 
@@ -32,4 +32,9 @@ function undoLast(){
 
 function updateButton(){
    btn.innerHTML = x;
+}
+
+function changeGoal(){
+  let newGoal = prompt("What would you like the new goal to be?");
+  goal.innerHTML = newGoal;
 }
